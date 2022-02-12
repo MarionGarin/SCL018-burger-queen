@@ -1,0 +1,53 @@
+
+.welcomeView {
+    display:block; 
+    justify-content: center;
+  }
+  
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+
+  }
+  
+.welcomeMessage {
+    display: flex;
+    font-size: 1.2rem;
+    padding: 2%;
+    
+}
+
+.welcomeBtns {
+    display: flex;
+    text-align: center;
+    margin-top: 5vh;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+}
+
+.kitchen, .waiters{
+    display: flex;
+    flex-direction: column;
+    background-color: #FD7336;
+    border: none;
+    color: #50424B;
+    height: 10vh;
+    width: 20vh;
+    border-radius: 20px;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+  
+
+}
+
+.waiters {
+    background-color: #9DBCA6;
+}
+

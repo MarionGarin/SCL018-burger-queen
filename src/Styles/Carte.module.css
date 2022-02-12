@@ -1,0 +1,36 @@
+.carteItem {
+    display: flex;
+    height: 8vh;
+    width: 20vw;
+    font-size: 0.4em;
+    background-color: #9DBCA6;
+    border: none;
+    color: #50424B;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+.carteBtn {
+    color: #9DBCA6;
+    width: 18vw;
+    height: 6vh;
+    margin-bottom: 4vh;
+}
+
+.carteMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    height: 55vh;
+    width: 50vw;
+    margin-top: 10%;
+}

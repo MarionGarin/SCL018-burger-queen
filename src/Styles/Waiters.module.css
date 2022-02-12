@@ -1,0 +1,124 @@
+.optionBtns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vh;
+    
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+    background-color: #9DBCA6;
+    border: none;
+    color: #50424B;
+    height: 8vh;
+    width: 28vh;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    
+}
+
+.orders {
+    display: flex;
+    flex-direction: column;
+    color: #FFF1DB;
+    height: 8vh;
+    width: 28vh;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    border-color: #FFF1DB;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+   
+}
+
+.carteMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    height: 55vh;
+    width: 50vw;
+}
+
+
+.afternoonMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    height: 55vh;
+    width: 50vw;
+}
+
+
+.foodBtns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15%;
+    justify-content: space-around;
+   
+    
+}
+
+.carteBtn, .afternoonBtn{
+    display: flex;
+    height: 8vh;
+    width: 20vw;
+    font-size: 0.6em;
+    background-color: #9DBCA6;
+    border: none;
+    color: #50424B;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-weight:bolder;
+}
+
+.boardCalculator {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+    
+}
+
+.confirmBtn {
+    background-color: #9D310A;
+    border-radius: 10px;
+    height: 8vh;
+    width: 40vw;
+    font-size: 0.6em;
+}
+
+.takeOrder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 7%;
+}
+
+

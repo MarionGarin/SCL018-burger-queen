@@ -1,0 +1,114 @@
+{
+       "carte": [
+        {
+            "id": "01",
+            "name": "Tetera con variedades de té",
+            "type": "Carta",
+            "varieties": [
+                {
+                    "id": "011",
+                    "name": "assam"
+                },
+
+                {
+                     "id": "012",
+                     "name": "darjeeling"
+
+                }
+            ],
+            "price": 2500
+        },
+
+        {
+            "id": "02",
+            "name": "Café americano",
+            "type": "Carta",
+            "price": 1800
+        },
+        {
+            "id": "03",
+            "name": "Latte",
+            "type": "Carta",
+            "price": 2600
+        },
+        {
+            "id": "04",
+            "name":  "Limonada Matcha",
+            "type": "Carta",
+            "price": 2200
+        },
+        {
+            "id": "05",
+            "name": "Porción de galletas",
+            "type": "Carta",
+            "price": 2200
+        },
+        {
+            "id": "06",
+            "name": "Trozo de torta del día",
+            "type": "Carta",
+            "price": 3500
+        },
+        {
+            "id": "07",
+            "name": "Bagel jamón y queso",
+            "type": "Carta",
+            "price": 3100
+        },
+        {
+            "id": "08",
+            "name": "Baguel salmón ahumado",
+            "type": "Carta",
+            "price": 3600
+        },
+        {
+            "id": "09",
+            "name": "Baguel vegano",
+            "type": "Carta",
+            "price": 3100
+        }
+
+       ],
+
+       "afternoon": [
+        {
+            "id": "10",
+            "name": "Experiencia Braganza",
+            "servings": 2,
+            "type": "Afternoon Tea",
+            "price": 11500
+        },
+        {
+            "id": "11",
+            "name": "Experiencia Bedford",
+            "servings": 3,
+            "type": "Afternoon Tea",
+            "price": 15800
+        },
+        {
+            "id": "12",
+            "name": "Experiencia Victoria",
+            "servings": 4,
+            "type": "Afternoon Tea",
+            "price": 22300
+        },
+        {
+            "id": "13",
+            "name": "Tetera de té extra",
+            "servings": 2,
+            "type": "Afternoon Tea",
+            "price": 2000
+        },
+        {
+            "id": "14",
+            "name": "Finger Food Extra",
+            "servings": 2,
+            "type": "Afternoon Tea",
+            "price": 4500
+        }
+
+       ]
+
+
+      }
+       

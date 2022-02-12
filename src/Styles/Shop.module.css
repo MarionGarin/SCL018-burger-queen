@@ -1,0 +1,24 @@
+.board {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5%;
+    border-radius: 15px;
+    height: 50vh;
+    width: 40vw;
+    margin-top: 6vh;
+    background-color: #FFF1DB;
+    color: #50424B;
+}
+
+.cartItem {
+    display: inline;
+    height: 5vh;
+    font-size: 0.8rem;
+}
+
+.cartTitle {
+    font-size:1.3rem;
+}
+

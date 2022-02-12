@@ -1,0 +1,15 @@
+.commonFooter {
+ 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: 10%;
+    
+    
+}
+
+.logo {
+    width: 10%;
+    height: auto;
+    margin-bottom: 5%;
+}
