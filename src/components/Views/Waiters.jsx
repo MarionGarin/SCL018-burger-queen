@@ -9,7 +9,7 @@ import Footer from '../Commons/Footer.jsx';
 // import menuJson from '../../data/menu.json';
 
 
-const Waiters = ({menu, shoppingCart, addToCart}) => {
+const Waiters = ({menu, shoppingCart, addToCart, eraseItem, takeAway}) => {
 
   const [modal, addModal] = useState(false) //estado para manipulación del modal
   // modal es el estado y addModal es la función que permite cambiar ese estado. Esto es 
@@ -66,7 +66,7 @@ const Waiters = ({menu, shoppingCart, addToCart}) => {
             </section>
 
             <div className={styles.boardCalculator}>
-             <Shop data={menu} shoppingCart={shoppingCart} addToCart={addToCart}/>
+             <Shop data={menu} shoppingCart={shoppingCart} addToCart={addToCart}  eraseItem = {eraseItem} takeAway={takeAway}/>
              <button type="button" className={`btn btn-secondary ${styles.confirmBtn}`}>CONFIRMAR ORDEN</button>
             </div>
       

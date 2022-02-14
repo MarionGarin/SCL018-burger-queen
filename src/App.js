@@ -13,8 +13,11 @@ function App() {
 
  // guardando el menú importado en una constante
   const menu = data;
+ 
 
- //estableciendo estado inical del carrito, que es un array vacío la función que lo modificará
+ //estableciendo estado inical del carrito, que se llama shoppingCart, mientras que 
+ //changeCart es la función que lo modificará. Se establece como useState un array vacío,
+ //lo que significa que el estado inicial de shoppingCart está vacío
   const [shoppingCart, changeCart] = useState([]);
  
     const addToCart = (id, name, price) => {
@@ -76,12 +79,80 @@ function App() {
 
      changeCart(newCart);
 
-
+    
     }
 
      console.log(shoppingCart)
-    
+
     }
+
+    
+// el problema es que me falta llamar a las propiedades CARTE y AFTERNOON
+
+// FX que borra elementos del pedido
+const eraseItem = (product) => {
+ const newOrder = shoppingCart.filter((item)=>item.id !== product)
+changeCart(newOrder);
+}
+
+// quitar un producto
+const takeAway = (id) => {
+  const newList = shoppingCart.map(item => item.id === id ? {...item, count: item.count -1} : item)
+  changeCart(newList);
+}
+
+/*
+const eraseItem = (item) => {
+  console.log('Item ID: ', item);
+
+  changeCart([{
+    ...shoppingCart.map((item, index) => item[index]).filter(product=> product !==item)
+    }])
+  return shoppingCart
+};
+*/
+
+console.log(eraseItem)
+/*
+    const eraseItem = (item) => {
+      changeCart([{
+        ...shoppingCart,
+         cart: shoppingCart.map((item) => item.filter((product)=> product.id !==item.id))
+        }])
+      return changeCart
+    };
+    
+    console.log(eraseItem)
+    */
+
+    /*
+    const eraseItem = (item) => {
+      changeCart([{
+        ...shoppingCart.map((item, index) => item[index]),
+         newCart: shoppingCart.filter(product=> product.id !==item.id)
+        }])
+      return changeCart
+    };
+    
+    console.log(eraseItem)
+    */
+    
+    // al aplicar filter, la modificación de los datos nuevos puede modificar el array original
+    // por eso debo clonar shoppingCart primero 
+   // en filter, si el resultado de la comprobación es verdadero, se retorna dentro del array. Si no, se descarta
+    // Lo que hago ahí es devolver todos los números cuyo id es distinto al seleccionado en el botón de eliminar
+    /*
+    const eraseItem = (id) => {
+      changeCart([{
+        ...shoppingCart,
+        shoppingCart : shoppingCart.filter((product) => product.id !== id)
+      }]);
+      return changeCart
+    };
+    
+    console.log(eraseItem)
+    */
+   
    
     
     
@@ -97,6 +168,10 @@ function App() {
       menu={menu} 
       shoppingCart={shoppingCart}
       addToCart= {addToCart}
+      eraseItem = {eraseItem}
+      takeAway = {takeAway}
+      
+  
       />} />
       <Route path="/kitchen" element ={<Kitchen />} />
     </Routes>

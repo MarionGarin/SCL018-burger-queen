@@ -10,6 +10,7 @@
     margin-top: 6vh;
     background-color: #FFF1DB;
     color: #50424B;
+    overflow-y: scroll;
 }
 
 .cartItem {
@@ -22,3 +23,6 @@
     font-size:1.3rem;
 }
 
+.hola {
+    height: 3vh;
+}

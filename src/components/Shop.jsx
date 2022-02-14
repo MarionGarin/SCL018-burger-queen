@@ -1,11 +1,21 @@
 import React from 'react'
 import styles from '../Styles/Shop.module.css'
 
-const Shop = ({shoppingCart}) => {
+const Shop = ({shoppingCart, addToCart, changeCart, eraseItem, takeAway}) => {
 
  // const menu = data
   //console.log(menu);
+ 
   
+  const total = shoppingCart.reduce((total, product) => (total + product.price * product.count) ,0)
+  .toFixed(0);
+
+  // en reduce, el primer parámetro es la fx reductora, mientras que l 0 corresponde al 
+  // valor inicial del acumulador. Lo que retorna en l10 es el valor del acumulador (total)
+  // más el valor del siguiente número que se adiciona (product.price * product.count)
+
+
+ 
     return (
 
       <div>
@@ -18,23 +28,37 @@ const Shop = ({shoppingCart}) => {
             </div>
 
             <div className={styles.board}>
-        
+
+    
             {shoppingCart.length > 0 ?
-            shoppingCart.map((product, index) => {
-                 return (
-                <section className={styles.cartItem} key={index}>
-               {product.name}
-               ${product.price}
-               , cant: {product.count}
-                </section>
-             )
-             })
+            
+               shoppingCart.map((product, index) => {
+                 
+                  return (
+                
+                   <section className={styles.cartItem} key={index}>
+                   {product.name}
+                   ${product.price}
+                   , cant: {product.count}
+                    <button className={styles.deleteButton} onClick={()=>eraseItem(product.id)}>X</button>
+                    <button className={styles.deleteButton} onClick={()=>takeAway(product.id)}>-</button>
+                    
+                   </section>
+                   
+                   )
+               })
+               
+            
              :
              <p className={styles.cartTitle}> Añade los ítems de tu cliente </p>
       
-      }
+             }
+            
+          
+             </div>  
 
-      </div>  
+            <p> Total: $ {total} </p>
+        
 
 
 
@@ -65,4 +89,13 @@ queremos imprimir su contenido dentro del return. Eso se mostrará en la pizarra
       )
 
         )}
+
+                  {
+            <section className={styles.total}>
+             {shoppingCart.reduce((total, product) => (total + product.price * product.count),0)
+             .toFixed(0)}
+             </section>
+                  
+                  }
+
   */
